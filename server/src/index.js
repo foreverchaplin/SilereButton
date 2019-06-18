@@ -10,9 +10,11 @@ console.log('PORT = ', port);
 express()
   .use(express.static(path.join(__dirname, '../../client/build')))
   .get('/api/light', (req, res) => {
+    console.log('DB = ', db);
     res.send({ light: db.light });
   })
   .post('/api/toggle', (req, res) => {
+    console.log('TOGGLE = ', db)
     fs.writeFile(
       path.join(__dirname, '../db/db.json'),
       JSON.stringify({ light: !db.light }),
