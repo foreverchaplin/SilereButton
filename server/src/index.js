@@ -5,6 +5,8 @@ const fs = require('fs');
 const db = require('../db/db.json');
 const port = process.env.PORT || 8000;
 
+console.log('PORT = ', port);
+
 express()
   .use(express.static(path.join(__dirname, '../../client/build')))
   .get('/api/light', (req, res) => {
