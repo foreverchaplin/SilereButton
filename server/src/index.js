@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 const db = require('../db/db.json');
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 8000;
 
 express()
   .use(express.static(path.join(__dirname, '../../client/build')))
@@ -21,5 +21,5 @@ express()
       }
     );
   })
-  .get('/*', (req, res) => res.sendFile(path.join(__dirname, '../../client/build/index.html')))
+  .get('*', (req, res) => res.sendFile(path.join(__dirname, '../../client/build/index.html')))
   .listen(port, () => console.log(`Listening on port ${port}`));
