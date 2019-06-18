@@ -2,8 +2,11 @@
   "name": "silere-button",
   "version": "1.0.0",
   "scripts": {
+    "install:client": "cd client && yarn install",
+    "install:server": "cd server && yarn install",
+    "install": "yarn install:client && yarn install:server",
     "build:client": "cd client yarn build",
-    "start:server": "cd server yarn start"
+    "start": "cd server yarn start"
   },
   "repository": {
     "type": "git",
