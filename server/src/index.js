@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 const db = require('../db/db.json');
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 express()
   .use(express.static(path.join(__dirname, '../../client/build')))
