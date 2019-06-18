@@ -8,8 +8,8 @@ body {
 .warning {
   background-image: url('./icon.png');
   background-size: cover;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 60px;
 }
 
 .container {
@@ -22,7 +22,7 @@ body {
 }
 
 .description > span {
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .description {
