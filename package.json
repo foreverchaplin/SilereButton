@@ -1,0 +1,18 @@
+{
+  "name": "silere-button",
+  "version": "1.0.0",
+  "scripts": {
+    "build:client": "cd client yarn build",
+    "start:server": "cd server yarn start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foreverchaplin/SilereButton.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foreverchaplin/SilereButton/issues"
+  },
+  "homepage": "https://github.com/foreverchaplin/SilereButton#readme"
+}
